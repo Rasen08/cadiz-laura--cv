@@ -13,7 +13,7 @@
 <li class="has-line-data" data-line-start="13" data-line-end="15"><strong>Git</strong> fue utilizado para el control de versiones.</li>
 </ul>
 <h2 class="code-line" data-line-start=15 data-line-end=16 ><a id="Acceso_al_proyecto_15"></a>Acceso al proyecto</h2>
-<p class="has-line-data" data-line-start="17" data-line-end="18">Puedes acceder al proyecto en línea a través del siguiente enlace: <a href="">Currículum Vitae</a></p>
+<p class="has-line-data" data-line-start="17" data-line-end="18">Puedes acceder al proyecto en línea a través del siguiente enlace: <a href="https://rasen08.github.io/cadiz-laura--cv/#referencias">Currículum Vitae</a></p>
 <h2 class="code-line" data-line-start=19 data-line-end=20 ><a id="Clonar_el_Repositorio_19"></a>Clonar el Repositorio</h2>
 <p class="has-line-data" data-line-start="21" data-line-end="22">Si deseas clonar y ejecutar el proyecto en tu máquina local, sigue estos pasos:</p>
 <p class="has-line-data" data-line-start="23" data-line-end="24"><strong>1. Clona el repositorio:</strong></p>
