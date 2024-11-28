@@ -1,25 +1,66 @@
 // vars
-$mainColor: rgb(11, 169, 116);
-$secondaryColor: rgb(13, 49, 147);
-$keyColor: rgb(213, 115, 199);
-$white: rgb(226, 226, 226);
-$black: rgb(24, 24, 24);
+$mainColor: rgb(51, 51, 51);
+$secondaryColor: rgb(121, 122, 123);
+$keyColor: rgb(13, 137, 165);
+$white: rgb(249, 249, 249);
+$whiteG: rgba(249, 249, 249, 0.1);
+$black: rgb(25, 25, 25);
+$blackG: rgba(25, 25, 25, 0.5);
+
+// breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
 
 // fonts
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
-$mainFont: "Nunito Sans", sans-serif;
-$secondaryFont: verdana;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
+$mainFont: "Quicksand", sans-serif;
 
 body{
-    background-image: url(../img/cv--headercut.jpg);
+    background-image: url(../img/headers/cv--headercut-02.png);
     background-size: 100%;
     background-repeat: no-repeat;
+}
+.container-fluid{
+    padding: 0px 20px;
+}
+@media (max-width: $breakpoint-lg) {
+    body{
+        background-size: 177%;
+        background-position: center top;
+        transition: 2s;
+    }
+    .header-intro{
+        .menu{
+            .collapse{
+                background-color: $blackG;
+                padding: 0px 20px 0px 20px;
+            }
+        }
+    }
+}
+@media (max-width: $breakpoint-md){
+    body{
+        background-image: url(../img/headers/cv--headercut-03.png);
+        background-size: 254%;
+        background-position: right top;
+        transition: 2s;
+    }
+}
+@media (max-width: $breakpoint-sm){
+    body{
+        background-size: 331%;
+        background-position: left top;
+        transition: 2s;
+    }
 }
 p,
 span,
 li,
 a{
-    font-family: $secondaryFont;
+    font-family: $mainFont;
+    text-decoration: none;
 }
 
 h1,
@@ -42,8 +83,9 @@ h4{
     margin: auto;
     text-decoration: none;
     &:hover{
-        background-color: $black;
+        background-color: $keyColor;
         color: $white;
+        border: solid 1px $keyColor;
     }
 }
 

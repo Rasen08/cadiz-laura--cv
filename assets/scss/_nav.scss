@@ -1,17 +1,50 @@
 // nesting - anidación
 .header-intro{
+    overflow: visible;
     .menu{
+        overflow: visible;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: #fff;
+        width: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         background-color: transparent;
         li{
             a{
                 font-family: $mainFont;
+                font-weight: 500;
+                color: $secondaryColor;
+                letter-spacing: 1px;
                 &:hover{
-                    color: $secondaryColor;
+                    color: $white;
                 }
             }
         }
-        img{
-            width: 120px;
+        img.logo{
+            width: 84px;
+        }
+        .navbar-toggler{
+            &:hover{    
+                background-color: $whiteG;
+            }
+            .navbar-icon{
+                color: $secondaryColor;
+                &:hover{
+                    color: $white;
+                }
+            }
         }
     }
 }
+
+@media (max-width: $breakpoint-lg) {
+    .header-intro{
+        .menu{
+            .collapse{
+                background-color: $blackG;
+                padding: 0px 20px 0px 20px;
+            }
+        }
+    }
+  }

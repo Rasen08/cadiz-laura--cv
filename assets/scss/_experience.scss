@@ -3,5 +3,12 @@
     margin: auto;
     div{
         border-radius: 2px;
+        a{
+            color: $keyColor;
+            border-bottom: 1px solid transparent;
+            &:hover{
+                border-bottom: 1px solid $keyColor;
+            }
+        }
     }
 }

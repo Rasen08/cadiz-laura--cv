@@ -1,0 +1,12 @@
+.interests{
+    width: 70%;
+    margin: auto;
+    svg{
+        width: 80px;
+        color: $secondaryColor;
+        border: solid 1px $keyColor;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    margin-bottom: 100px;
+}

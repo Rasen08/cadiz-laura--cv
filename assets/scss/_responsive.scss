@@ -1,0 +1,10 @@
+@media (width < $breakpoint-lg){
+    .aboutme,
+    .download p,
+    .experience,
+    .interests,
+    .portfolio,
+    .skills{
+        width: 100%;
+    }
+}
